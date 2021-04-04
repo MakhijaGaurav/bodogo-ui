@@ -1,5 +1,5 @@
 import React from 'react'
-import {Carousel} from 'antd';
+import {Carousel, Col, Row} from 'antd';
 
 const contentStyle = {
     height: '160px',
@@ -13,6 +13,8 @@ class App extends React.Component{
     render() {
         return(
             <div>
+                <Row>
+                    <Col span={24}>
                 <Carousel autoplay={true}>
                     <div>
                         <h3 style={contentStyle}>1</h3>
@@ -25,6 +27,8 @@ class App extends React.Component{
                         <h3 style={contentStyle}>4</h3>
                     </div>
                 </Carousel>
+                    </Col>
+                </Row>
             </div>
         )
     }
