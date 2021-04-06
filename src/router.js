@@ -3,6 +3,12 @@ import {Switch,Route} from 'react-router-dom';
 
 const routes = [
     {
+        path:'/',
+        exact:true,
+        key:'about',
+        Component:lazy(()=>import('pages/home')),
+    },
+    {
         path:'/about',
         exact:true,
         key:'about',

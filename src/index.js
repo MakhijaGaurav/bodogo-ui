@@ -6,12 +6,22 @@ import reportWebVitals from 'reportWebVitals';
 import Navbar from "components/navbar";
 import {BrowserRouter} from 'react-router-dom'
 import Routes from "router";
+import {Layout} from "antd";
+import FooterContent from "./components/footer";
+const {Header,Footer,Content} = Layout
 
 
 ReactDOM.render(
     <BrowserRouter>
-    <Navbar/>
-    <Routes/>
+        <Layout>
+                <Navbar/>
+            <Content>
+                <Routes/>
+            </Content>
+            <Footer>
+                <FooterContent/>
+            </Footer>
+        </Layout>
     </BrowserRouter>,
   document.getElementById('root')
 );
