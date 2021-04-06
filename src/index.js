@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from 'reportWebVitals';
+import Navbar from "components/navbar";
+import {BrowserRouter} from 'react-router-dom'
+import Routes from "router";
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+    <Navbar/>
+    <Routes/>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
